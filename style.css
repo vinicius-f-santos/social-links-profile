@@ -15,4 +15,76 @@
 
 html {
     font-size: 14px;
+    background-color: var(--grey900);
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 24rem;
+    background-color: var(--grey800);
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    flex-direction: column;
+    border-radius: 1.2rem;
+}
+
+.profile-img {
+    background-image: url("assets/images/avatar-jessica.jpeg");
+    background-size: cover;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+h1 {
+    padding: 1rem 0 0.3rem 0;
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+p:nth-of-type(1) {
+    padding: 0 0 1.5rem 0;
+    color: var(--green);
+}
+
+.links-container {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0.5rem;
+}
+
+a {
+    padding: 0.8rem;
+    background-color: var(--grey700);
+    border-radius: 1.2rem;
+    margin-top: 0.8rem;
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: var(--green);
+    color: black;
+}
+
+@media screen and (max-height: 55rem) {
+    body {
+        padding: 2% 0;
+    }
 }
